@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/main.css" />
+		<title>Create Acount</title>
+	</head>
+	<body>
+		<main id="container">
+			<form action="">
+				<div class="form-item flex-col">
+					<label for="full-name">Full name</label>
+					<div class="input-div">
+						<input
+							type="text"
+							id="full-name"
+							class="w-100"
+							placeholder="Your Name"
+						/>
+						<span class="vertical-line"></span>
+					</div>
+				</div>
+				<div class="form-item flex-col">
+					<label for="email-address">Email address</label>
+					<div class="input-div">
+						<input
+							type="email"
+							id="email-address"
+							class="w-100"
+							placeholder="email address"
+						/>
+						<span class="vertical-line"></span>
+					</div>
+				</div>
+				<div class="form-item flex-col">
+					<label for="date-of-birth">date of birth</label>
+					<input
+						type="date"
+						id="date-of-birth"
+						class="w-100"
+						onchange="this.style.color='#000000'"
+					/>
+				</div>
+				<div class="form-item flex-col">
+					<label for="gender">gender</label>
+					<div id="gender-div">
+						<label for="male" class="gender-opt">
+							<input type="radio" id="male" name="gender" value="male" />
+							<span class="radio-checkmark"></span>
+							male
+						</label>
+						<label for="female" class="gender-opt">
+							<input type="radio" id="female" name="gender" value="female" />
+							<span class="radio-checkmark"></span>
+							female
+						</label>
+					</div>
+				</div>
+				<div class="form-item flex-center">
+					<label for="agree-to-terms">
+						<input
+							type="checkbox"
+							id="agree-to-terms"
+							name="agree-to-terms"
+							value="agree"
+						/>
+						<span class="checkbox-checkmark"></span>
+						I accept the terms and conditions</label
+					>
+				</div>
+				<div class="form-item flex-center">
+					<input type="submit" id="create-account" value="create account" />
+				</div>
+			</form>
+		</main>
+		<script src="./index.js"></script>
+	</body>
+</html>
